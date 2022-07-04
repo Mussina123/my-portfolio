@@ -1,0 +1,28 @@
+import React from "react";
+import TB from '../images/TB-headshot.jpg'
+
+export default function About(){
+    return(
+     <div
+        name="about"
+        className="w-full h-100 pt-20"
+        >
+      <div className="sm:pr-2 max-w-screen-lg pt-6 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-black">
+            About
+          </p>
+        </div>
+
+        <img className="max-w-md self-center" alt="Profile" src={TB}></img>
+        <p className="text-xl mt-5">
+        I'm a full-stack developer who is highly flexible, an established learner, and continuously expanding my knowledge to maintain current and upcoming coding best practices to maximize performance and quality. I am looking to bring my skills to a tech company with global reach.
+        </p>
+      </div>
+
+      <div>
+      
+      </div>
+    </div>
+  );
+};
