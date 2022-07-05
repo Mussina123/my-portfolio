@@ -3,7 +3,7 @@ import PT from '../images/Physical-therapy.png'
 import LUX from '../images/LUX.png'
 import NASA from '../images/NASA.png'
 import TravelJournal from '../images/React-travel-journal.png'
-import Meme from '../images/Meme-app.png'
+import Meme from '../images/Meme-2.png'
 import {DiGithubBadge} from 'react-icons/di'
 import {GrPersonalComputer} from 'react-icons/gr'
 
@@ -53,24 +53,24 @@ export default function Projects(){
     return(
      <div
         name="projects"
-        className="w-full h-100 pt-20"
+        className="w-full h-100 pt-10"
         >
-      <div className="sm:pr-2 max-w-screen-lg pt-6 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="sm:pr-2 max-w-screen-lg pt-1 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-black">
             Projects
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-10 sm:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 sm:px-0 ">
             {myProjects.map(({id, imgs, repo, url }) => (
                 <div key={id}>
                     <img
                     src= {imgs}
                     alt="projects"
-                    className="rounded hover:scale-105"
+                    className="rounded-lg duration-200 hover:scale-105 w-full h-72"
                     />
-                    <div className="flex justify-center items-center gap-6 pt-3 border-solid">
+                    <div className="flex justify-center items-center gap-6 pt-6 mb-4">
                       <div className="flex items-center gap-1 text-xl font-medium hover:underline hover:font-bold cursor-pointer" onClick={ () => window.open(repo, '_blank')}><DiGithubBadge size={30}/> Github</div>
                       <div className="flex items-center gap-1 text-xl font-medium hover:underline hover:font-bold cursor-pointer" onClick={ () => window.open(url, '_blank')}><GrPersonalComputer size={30} /> Website </div>
                     </div>

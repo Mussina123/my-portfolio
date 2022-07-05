@@ -10,11 +10,13 @@ export default function About(){
       <div className="sm:pr-2 max-w-screen-lg pt-6 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-black">
-            About
+            
           </p>
         </div>
 
-        <img className="max-w-md self-center" alt="Profile" src={TB}></img>
+        <img className="max-w-sm self-center" alt="Profile" src={TB}></img>
+        <h1 className="text-6xl font-bold text-center mt-5">Tyler Beck </h1>
+        <h3 className="text-3xl font-medium text-center mt-3"> Full Stack Software Engineer</h3>
         <p className="text-xl mt-5">
         I'm a full-stack developer who is highly flexible, an established learner, and continuously expanding my knowledge to maintain current and upcoming coding best practices to maximize performance and quality. I am looking to bring my skills to a tech company with global reach.
         </p>
