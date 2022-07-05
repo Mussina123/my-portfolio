@@ -8,10 +8,10 @@ const [navigation, setNavigation] = React.useState(false);
 
 
 const urls = [
-    {
-        id: 1, 
-        url: 'home',
-    }, 
+    // {
+    //     id: 1, 
+    //     url: 'home',
+    // }, 
     {
         id: 2, 
         url: 'about',
