@@ -67,18 +67,18 @@ const languages = [
     return(
     <div    
     name="languages"
-    className="w-full h-100 pt-10 pl-12 md:pl-0 sm:pr-2 max-w-screen-lg pt-1 mx-auto flex flex-col justify-center w-full h-full">
+    className="w-full h-100 pt-10 pl-10 md:pl-0 sm:pr-2 max-w-screen-lg pt-1 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-black">
             Languages
           </p>
          </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 justify-center align-center">
+            <div className="grid grid-cols-2 md:grid-cols-5 justify-center align-center justify-self-center">
                 {languages.map(({id, logo, title}) => (
-                    <div key={id}> 
-                    <img className="w-36 px-auto"  src={logo}></img>
+                    <div key={id} className=" ml-6  md:text-center md:justify-self-center mb-8"> 
+                    <img className="h-36 hover:scale-105"  src={logo}></img>
                     
-                    {title}
+                    <div className="ml-9 font-extrabold md:ml-0 mt-5 text-2xl ">{title}</div>
                     </div>
                 ))}
             </div>

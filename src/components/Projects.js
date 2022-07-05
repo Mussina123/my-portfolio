@@ -4,6 +4,7 @@ import LUX from '../images/LUX.png'
 import NASA from '../images/NASA.png'
 import TravelJournal from '../images/React-travel-journal.png'
 import Meme from '../images/Meme-2.png'
+import BOOK from '../images/BOOK.png'
 import {DiGithubBadge} from 'react-icons/di'
 import {GrPersonalComputer} from 'react-icons/gr'
 
@@ -43,6 +44,13 @@ export default function Projects(){
             imgs: NASA,
             repo: 'https://github.com/Mussina123/NASA-API-',
             url: 'https://nasaimageoftheday.netlify.app/',
+            
+        },
+        {
+            id: 6, 
+            imgs: BOOK,
+            repo: 'https://github.com/Mussina123/Library-Project',
+            url: 'https://my-book-list35.netlify.app/',
             
         }
     ]
