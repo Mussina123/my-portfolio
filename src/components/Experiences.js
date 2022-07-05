@@ -67,7 +67,7 @@ const languages = [
     return(
     <div    
     name="languages"
-    className="w-full h-100 pt-10 pl-12 sm:pr-2 max-w-screen-lg pt-1 mx-auto flex flex-col justify-center w-full h-full">
+    className="w-full h-100 pt-10 pl-12 md:pl-0 sm:pr-2 max-w-screen-lg pt-1 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-black">
             Languages
