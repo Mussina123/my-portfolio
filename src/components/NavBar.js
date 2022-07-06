@@ -32,7 +32,7 @@ const urls = [
 ];
 
     return(
-        <div className="sm:flex-none md:flex justify-center items-center w-full h-25 px-4 text-black  nav">
+        <div className="sm:flex-none md:flex justify-center items-center w-full h-25 px-4 text-black fixed md:static nav">
             {/* <div>
                 <h1 className="font-bold text-6xl font-signature ml-4 mt-4 "><a className="link-underline link-underline-black hover:underline underline-offset-8 transition ease-in-out delay-150" href= "https://tylerbeck-webdev.netlify.app" target="_blank" rel='noreferrer'>Tyler</a></h1>
             </div> */}
@@ -54,7 +54,7 @@ const urls = [
             onClick={() => setNavigation(!navigation)}
             className="cursor-pointer pr-10 z-10 text-black-500 flex-none md:hidden"
             >
-                {navigation ? <FaTimes size={35} /> : <FaBars size={35} className="cursor-pointer p- mt-6 ml-5" />}
+                {navigation ? <FaTimes size={35} /> : <FaBars size={35} className="cursor-pointer mt-6 ml-[-1]" />}
             </div>
 
             {navigation && (
