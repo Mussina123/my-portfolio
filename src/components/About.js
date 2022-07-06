@@ -5,9 +5,9 @@ export default function About(){
     return(
      <div
         name="about"
-        className="w-full h-100 pt-10"
+        className="w-full h-100 "
         >
-      <div className="sm:pr-2 max-w-screen-lg pt-6 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="sm:pr-2 max-w-screen-lg pt-2 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-black">
             

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {Link} from 'react-scroll'
+import { TbArrowUp } from "react-icons/tb";
 
 export default function NavBar() {
 
@@ -31,7 +32,7 @@ const urls = [
 ];
 
     return(
-        <div className="sm:flex-none md:flex justify-center items-center w-full h-25 px-4 text-black fixed nav">
+        <div className="sm:flex-none md:flex justify-center items-center w-full h-25 px-4 text-black  nav">
             {/* <div>
                 <h1 className="font-bold text-6xl font-signature ml-4 mt-4 "><a className="link-underline link-underline-black hover:underline underline-offset-8 transition ease-in-out delay-150" href= "https://tylerbeck-webdev.netlify.app" target="_blank" rel='noreferrer'>Tyler</a></h1>
             </div> */}
@@ -75,6 +76,10 @@ const urls = [
           ))}
         </ul>
       )}
+            <div className="lg:bottom-[4%] lg:right-5 lg:fixed">
+                <TbArrowUp size={50}/>
+            </div>
         </div>
+    
     )
 }
