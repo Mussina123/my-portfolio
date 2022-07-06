@@ -76,7 +76,7 @@ const urls = [
           ))}
         </ul>
       )}
-            <Link className="lg:bottom-[4%] lg:right-5 lg:fixed"
+            <Link className="bottom-[4%] right-0 fixed lg:bottom-[4%] lg:right-5 lg:fixed"
             to= 'about'
             smooth
             duration={500}>
