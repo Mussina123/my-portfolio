@@ -14,7 +14,7 @@ export default function About(){
           </p>
         </div>
 
-        <img className="max-w-sm self-center" alt="Profile" src={TB}></img>
+        <img className="max-w-sm self-center rounded-lg	" alt="Profile" src={TB}></img>
         <h1 className="text-6xl font-bold text-center mt-5">Tyler Beck </h1>
         <h3 className="text-3xl font-medium text-center mt-3"> Full Stack Software Engineer</h3>
         <p className="text-xl mt-5 px-6">
