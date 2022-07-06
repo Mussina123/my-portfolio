@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {Link} from 'react-scroll'
-import { TbArrowUp } from "react-icons/tb";
+import { TbArrowUpCircle } from "react-icons/tb";
 
 export default function NavBar() {
 
@@ -76,9 +76,12 @@ const urls = [
           ))}
         </ul>
       )}
-            <div className="lg:bottom-[4%] lg:right-5 lg:fixed">
-                <TbArrowUp size={50}/>
-            </div>
+            <Link className="lg:bottom-[4%] lg:right-5 lg:fixed"
+            to= 'about'
+            smooth
+            duration={500}>
+                <TbArrowUpCircle size={40}/>
+            </Link>
         </div>
     
     )

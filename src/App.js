@@ -3,7 +3,7 @@ import About from './components/About';
 import Projects from "./components/Projects";
 import Experiences from "./components/Experiences"
 import SideBar from "./components/SideBar"
-import RightNavBar from './components/RightNavBar'
+// import RightNavBar from './components/RightNavBar'
 
 export default function App() {
   return (

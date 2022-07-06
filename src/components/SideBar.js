@@ -52,7 +52,7 @@ const socials = [
             <div className="flex flex-row justify-center lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed">
                 {socials.map(({id, child, href, download})=> (
                     <ul key={id} className=''>
-                        <a href={href} download={download} target='_blank'>
+                        <a href={href} download={download} target='_blank' rel='noreferrer'>
                         <li className="pt-5 pr-4 pl-4 hover:scale-110">
                             {child} 
                         </li>
