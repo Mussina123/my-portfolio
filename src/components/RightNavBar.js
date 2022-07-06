@@ -1,8 +1,7 @@
 import React from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import {Link} from 'react-scroll'
 
-export default function NavBar() {
+export default function RightNavBar() {
 
 const [navigation, setNavigation] = React.useState(false);
 
@@ -31,12 +30,12 @@ const urls = [
 ];
 
     return(
-        <div className="sm:flex-none md:flex justify-center items-center w-full h-25 px-4 text-black fixed nav">
+        <div className="sm:flex-none md:flex justify-center items-center w-full h-25 px-4 text-black bg-green-400 fixed nav">
             {/* <div>
                 <h1 className="font-bold text-6xl font-signature ml-4 mt-4 "><a className="link-underline link-underline-black hover:underline underline-offset-8 transition ease-in-out delay-150" href= "https://tylerbeck-webdev.netlify.app" target="_blank" rel='noreferrer'>Tyler</a></h1>
             </div> */}
 
-            <ul className="hidden md:flex " >
+            <ul className="hidden md:flex flex flex-row justify-center lg:flex lg:flex-col lg:top-[35%] lg:right-0 lg:fixed" >
                 {urls.map(({id, url}) => (
                     <li
                         key= {id}
@@ -49,14 +48,33 @@ const urls = [
                 ))}
             </ul>
 
-            <div 
+
+
+            {/* return(
+        <div className="container">
+            <div className="flex flex-row justify-center lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed">
+                {socials.map(({id, child, href, download})=> (
+                    <ul key={id} className=''>
+                        <a href={href} download={download} target='_blank'>
+                        <li className="pt-5 pr-4 pl-4 hover:scale-110">
+                            {child} 
+                        </li>
+                        </a>
+                    </ul>
+                )
+                )}
+            </div>
+        </div>
+    ) */}
+
+            {/* <div 
             onClick={() => setNavigation(!navigation)}
             className="cursor-pointer pr-10 z-10 text-black-500 flex-none md:hidden"
             >
                 {navigation ? <FaTimes size={35} /> : <FaBars size={35} className="cursor-pointer p- mt-6 ml-5" />}
-            </div>
+            </div> */}
 
-            {navigation && (
+            {/* {navigation && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0  w-full h-screen bg-gradient-to-b from-black to-gray-600 text-white">
           {urls.map(({ id, url }) => (
             <li
@@ -74,7 +92,7 @@ const urls = [
             </li>
           ))}
         </ul>
-      )}
+      )} */}
         </div>
     )
 }

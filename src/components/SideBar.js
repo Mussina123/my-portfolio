@@ -3,6 +3,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillFilePersonFill } from "react-icons/bs";
+import Resume from '../images/TB-SWE-RESUME.pdf'
 
 export default function SideBar(){
 
@@ -11,7 +12,7 @@ const socials = [
         id: 1, 
         child: (
             <>
-            Github <AiFillGithub size={30}/>
+             <AiFillGithub size={40}/>
             </>
         ),
         href: 'https://github.com/Mussina123'
@@ -20,7 +21,7 @@ const socials = [
         id: 2, 
         child: (
             <>
-            LinkedIn <BsLinkedin size={30}/>
+             <BsLinkedin size={40}/>
             </>
         ),
         href: 'https://www.linkedin.com/in/tyler-beck-webdev/'
@@ -29,7 +30,7 @@ const socials = [
         id: 3, 
         child: (
             <>
-            Email <HiOutlineMail size={30} />
+             <HiOutlineMail size={40} />
             </>
         ) ,
         href: 'mailto:softwaretpd2035@gmail.com'
@@ -38,31 +39,27 @@ const socials = [
         id: 4, 
         child: (
             <>
-            Resume  < BsFillFilePersonFill size={30}/>
+              < BsFillFilePersonFill size={40}/>
             </>
         ),
-        href: 'resume'
+        href: Resume,
+        download: true
     }
 ]
 
     return(
         <div className="container">
-            <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
-                {socials.map(({id, child, href})=> (
+            <div className="flex flex-row justify-center lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed">
+                {socials.map(({id, child, href, download})=> (
                     <ul key={id} className=''>
-                        <a href={href}>
-                        <li className="flex text-3xl pt-4 pr-4 pl-5 flex justify-between items-center ml-[-132px]">
+                        <a href={href} download={download} target='_blank'>
+                        <li className="pt-5 pr-4 pl-4 hover:scale-110">
                             {child} 
                         </li>
                         </a>
                     </ul>
                 )
                 )}
-                <ul>
-                    <li>
-
-                    </li>
-                </ul>
             </div>
         </div>
     )
