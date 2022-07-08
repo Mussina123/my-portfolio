@@ -28,14 +28,14 @@ export default function ContactForm(){
                 Contact Me 
               </p>
              </div>
-            <form className="flex flex-col w-full justify-center w-3/4 md:w-1/2">
-                <label  className="mb-2 font-medium">Name</label>
-                <input type="text" name="user_name" />
+            <form className="flex flex-col w-10/12 ml-4 md:w-1/2 md:m-auto">
+                <label className="mb-2 font-medium ">Name</label>
+                <input className="border border-gray-300 rounded-md shadow-sm py-1 focus:outline-none focus:border-black focus:ring-1 focus:ring-green-600 "  type="text" name="user_name" />
                 <label className="mb-2 font-medium mt-2">Email</label>
-                <input type="email" name="user_email" />
+                <input className="border border-gray-300 rounded-md shadow-sm py-1 focus:outline-none focus:border-black focus:ring-1 focus:ring-green-600 "  type="email" name="user_email" />
                 <label className="mb-2 font-medium mt-2">Message</label>
-                <textarea name="message" />
-                <input className="mt-2" type="submit" value="Submit" />
+                <textarea className="border border-gray-300 rounded-md shadow-sm py-1 focus:outline-none focus:border-black focus:ring-1 focus:ring-green-600 "  name="message" />
+                <input className="mt-2  " type="submit" value="Submit" />
             </form>
 
         </div>
