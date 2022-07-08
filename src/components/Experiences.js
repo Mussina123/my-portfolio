@@ -75,10 +75,10 @@ const languages = [
          </div>
             <div className="grid grid-cols-2 md:grid-cols-5 justify-center align-center justify-self-center">
                 {languages.map(({id, logo, title}) => (
-                    <div key={id} className=" ml-6  md:text-center md:justify-self-center mb-8"> 
-                    <img className="h-36 hover:scale-105"  src={logo} alt=""></img>
+                    <div key={id} className=" ml-0  md:text-center md:justify-self-center mb-8"> 
+                    <img className="h-36 ml-0 hover:scale-105"  src={logo} alt=""></img>
                     
-                    <div className="ml-9 font-extrabold md:ml-0 mt-5 text-2xl ">{title}</div>
+                    <div className="ml-6 font-extrabold md:ml-0 mt-5 text-2xl ">{title}</div>
                     </div>
                 ))}
             </div>
