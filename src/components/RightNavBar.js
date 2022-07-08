@@ -3,7 +3,7 @@
 
 // export default function RightNavBar() {
 
-// const [navigation, setNavigation] = React.useState(false);
+// const [navigations, setNavigations] = React.useState(false);
 
 
 // const urls = [

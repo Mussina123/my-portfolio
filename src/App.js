@@ -13,8 +13,8 @@ export default function App() {
       <About />
       <Projects />
       <Experiences />
-      <SideBar />
       <ContactForm />
+      <SideBar />
       {/* <RightNavBar /> */}
     </div>
   )
