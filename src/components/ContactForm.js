@@ -15,10 +15,25 @@ import emailjs from '@emailjs/browser';
 //         });
 //         e.target .reset()
 //     };
-  
+
 
 
 export default function ContactForm(){
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_z9dkv2q', 'template_0r02jit', e.target, '1JtxVV9Wt8QR0pAbZ')
+        .then((result) => {
+            console.log(result.text);
+            alert('I recieved your message, I will be in contact soon, thank you!')
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset()
+    };
+  
+
     return (
         <div    
         name="contact"
@@ -28,14 +43,14 @@ export default function ContactForm(){
                 Contact Me 
               </p>
              </div>
-            <form className="flex flex-col w-10/12 ml-4 md:w-1/2 md:m-auto">
+            <form onSubmit={sendEmail}  className="flex flex-col w-10/12 ml-4 md:w-1/2 md:m-auto">
                 <label className="mb-2 font-medium ">Name</label>
                 <input className="border border-gray-300 rounded-md shadow-sm py-1 focus:outline-none focus:border-black focus:ring-1 focus:ring-green-600 "  type="text" name="user_name" />
                 <label className="mb-2 font-medium mt-2">Email</label>
                 <input className="border border-gray-300 rounded-md shadow-sm py-1 focus:outline-none focus:border-black focus:ring-1 focus:ring-green-600 "  type="email" name="user_email" />
                 <label className="mb-2 font-medium mt-2">Message</label>
                 <textarea className="border border-gray-300 rounded-md shadow-sm py-1 focus:outline-none focus:border-black focus:ring-1 focus:ring-green-600 "  name="message" />
-                <input className="mt-2  " type="submit" value="Submit" />
+                <input className="mt-4 mb-3 hover:font-bold font-medium" type="submit" value="Submit" />
             </form>
 
         </div>
