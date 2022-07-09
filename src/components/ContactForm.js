@@ -50,7 +50,7 @@ export default function ContactForm(){
                 <input className="border border-gray-300 rounded-md shadow-sm py-1 focus:outline-none focus:border-black focus:ring-1 focus:ring-green-600 "  type="email" name="user_email" />
                 <label className="mb-2 font-medium mt-2">Message</label>
                 <textarea className="border border-gray-300 rounded-md shadow-sm py-1 focus:outline-none focus:border-black focus:ring-1 focus:ring-green-600 "  name="message" />
-                <input className="mt-4 mb-3 hover:font-bold font-medium" type="submit" value="Submit" />
+                <input className="mt-4 mb-3 hover:font-bold font-medium hover:cursor-pointer" type="submit" value="Submit" />
             </form>
 
         </div>
