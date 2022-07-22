@@ -8,6 +8,12 @@ import BOOK from '../images/BOOK.png'
 import {DiGithubBadge} from 'react-icons/di'
 import {GrPersonalComputer} from 'react-icons/gr'
 
+import HTML from '../logos/HTML-logo.png'
+import CSS from '../logos/CSS-logo.png'
+import JS from '../logos/JS-logo.png'
+import REACTLOGO from '../logos/REACT-logo.png'
+import BOOTSTRAP from '../logos/BOOTSTRAP-logo.png'
+
 export default function Projects(){
 
     const myProjects = [
@@ -16,6 +22,9 @@ export default function Projects(){
             imgs: PT,
             repo: 'https://github.com/Mussina123/Physical-Therapy-Website',
             url: 'https://healing-physical-therapy.netlify.app/',
+            logo: HTML,
+            logo2: CSS,
+            logo3: JS, 
        
         },
         {
@@ -23,6 +32,10 @@ export default function Projects(){
             imgs: TravelJournal,
             repo: 'https://github.com/Mussina123/React-travel-journal',
             url: 'https://tb-travel-journal.netlify.app/',
+            logo: REACTLOGO,
+            logo2: JS,
+            logo3: HTML,
+            logo4: CSS,
      
         },
         {
@@ -30,6 +43,10 @@ export default function Projects(){
             imgs: Meme,
             repo: 'https://github.com/Mussina123/React-meme-app',
             url: 'https://tb-meme-app.netlify.app/',
+            logo: REACTLOGO,
+            logo2: JS,
+            logo3: HTML,
+            logo4: CSS,
           
         },
         {
@@ -37,13 +54,18 @@ export default function Projects(){
             imgs: LUX,
             repo: 'https://github.com/Mussina123/lux-real-estate-landing-page',
             url: 'https://lux-real-estate-tb-dev.netlify.app/',
-        
+            logo: HTML,
+            logo2: CSS,
+            logo3: JS,  
         },
         {
             id: 5, 
             imgs: NASA,
             repo: 'https://github.com/Mussina123/NASA-API-',
             url: 'https://nasaimageoftheday.netlify.app/',
+            logo: HTML,
+            logo2: CSS,
+            logo3: JS, 
             
         },
         {
@@ -51,6 +73,10 @@ export default function Projects(){
             imgs: BOOK,
             repo: 'https://github.com/Mussina123/Library-Project',
             url: 'https://my-book-list35.netlify.app/',
+            logo: HTML,
+            logo2: CSS,
+            logo3: JS, 
+            logo4: BOOTSTRAP
             
         }
     ]
@@ -71,7 +97,7 @@ export default function Projects(){
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 sm:px-0 ">
-            {myProjects.map(({id, imgs, repo, url }) => (
+            {myProjects.map(({id, imgs, repo, url, logo, logo2, logo3, logo4 }) => (
                 <div key={id}>
                     <img
                     src= {imgs}
@@ -82,6 +108,12 @@ export default function Projects(){
                       <div className="flex items-center gap-1 text-xl font-medium hover:underline hover:font-bold cursor-pointer" onClick={ () => window.open(repo, '_blank')}><DiGithubBadge size={30}/> Github</div>
                       <div className="flex items-center gap-1 text-xl font-medium hover:underline hover:font-bold cursor-pointer" onClick={ () => window.open(url, '_blank')}><GrPersonalComputer size={30} /> Website </div>
                     </div>
+                      <div className="flex justify-center gap-6">
+                      <img className="h-6" alt='skills' src={logo}></img>
+                      <img className="h-6" alt='skills' src={logo2}></img>
+                      <img className="h-6" alt='skills' src={logo3}></img>
+                      <img className="h-6" alt='' src={logo4}></img>
+                      </div>
                 </div>
                 ))}
             </div>
