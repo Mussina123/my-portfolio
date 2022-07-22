@@ -108,7 +108,7 @@ export default function Projects(){
                       <div className="flex items-center gap-1 text-xl font-medium hover:underline hover:font-bold cursor-pointer" onClick={ () => window.open(repo, '_blank')}><DiGithubBadge size={30}/> Github</div>
                       <div className="flex items-center gap-1 text-xl font-medium hover:underline hover:font-bold cursor-pointer" onClick={ () => window.open(url, '_blank')}><GrPersonalComputer size={30} /> Website </div>
                     </div>
-                      <div className="flex justify-center gap-6">
+                      <div className="flex justify-center gap-6 mb-2 md:mb-0">
                       <img className="h-6" alt='skills' src={logo}></img>
                       <img className="h-6" alt='skills' src={logo2}></img>
                       <img className="h-6" alt='skills' src={logo3}></img>
