@@ -4,15 +4,19 @@ import LUX from '../images/LUX.png'
 import NASA from '../images/NASA.png'
 import TravelJournal from '../images/React-travel-journal.png'
 import Ecomm from '../images/Ecomm-2.png'
-import Meme from '../images/Meme-2.png'
+// import Meme from '../images/Meme-2.png'
+import GoTravel from '../images/GoTravel.png'
 // import BOOK from '../images/BOOK.png'
 import { DiGithubBadge } from 'react-icons/di'
 import { GrPersonalComputer } from 'react-icons/gr'
 
+import Node from '../logos/NODE-logo.png'
 import HTML from '../logos/HTML-logo.png'
 import CSS from '../logos/CSS-logo.png'
 import JS from '../logos/JS-logo.png'
 import REACTLOGO from '../logos/REACT-logo.png'
+import Tailwind from '../logos/TAILWIND-logo.png'
+import Mongo from '../logos/MONGODB-logo.png'
 // import BOOTSTRAP from '../logos/BOOTSTRAP-logo.png'
 
 
@@ -21,6 +25,17 @@ export default function Projects() {
   const myProjects = [
     {
       id: 1,
+      imgs: GoTravel,
+      repo: 'https://github.com/Mussina123/',
+      url: 'https://fine-ruby-deer-cap.cyclic.app/',
+      logo: REACTLOGO,
+      logo2: Node,
+      logo3: Tailwind,
+      logo4: Mongo,
+
+    },
+    {
+      id: 2,
       imgs: Ecomm,
       repo: 'https://github.com/Mussina123/ecomm',
       url: 'https://ecomm-mussina123.vercel.app/',
@@ -31,7 +46,7 @@ export default function Projects() {
 
     },
     {
-      id: 1,
+      id: 3,
       imgs: PT,
       repo: 'https://github.com/Mussina123/Physical-Therapy-Website',
       url: 'https://healing-physical-therapy.netlify.app/',
@@ -41,7 +56,7 @@ export default function Projects() {
 
     },
     {
-      id: 2,
+      id: 4,
       imgs: TravelJournal,
       repo: 'https://github.com/Mussina123/React-travel-journal',
       url: 'https://tb-travel-journal.netlify.app/',
@@ -51,19 +66,19 @@ export default function Projects() {
       logo4: CSS,
 
     },
-    {
-      id: 3,
-      imgs: Meme,
-      repo: 'https://github.com/Mussina123/React-meme-app',
-      url: 'https://tb-meme-app.netlify.app/',
-      logo: REACTLOGO,
-      logo2: JS,
-      logo3: HTML,
-      logo4: CSS,
+    // {
+    //   id: 5,
+    //   imgs: Meme,
+    //   repo: 'https://github.com/Mussina123/React-meme-app',
+    //   url: 'https://tb-meme-app.netlify.app/',
+    //   logo: REACTLOGO,
+    //   logo2: JS,
+    //   logo3: HTML,
+    //   logo4: CSS,
 
-    },
+    // },
     {
-      id: 4,
+      id: 6,
       imgs: LUX,
       repo: 'https://github.com/Mussina123/lux-real-estate-landing-page',
       url: 'https://lux-real-estate-tb-dev.netlify.app/',
@@ -72,7 +87,7 @@ export default function Projects() {
       logo3: JS,
     },
     {
-      id: 5,
+      id: 7,
       imgs: NASA,
       repo: 'https://github.com/Mussina123/NASA-API-',
       url: 'https://nasaimageoftheday.netlify.app/',
