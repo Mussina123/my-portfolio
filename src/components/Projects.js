@@ -27,7 +27,7 @@ export default function Projects() {
       id: 1,
       imgs: GoTravel,
       repo: 'https://github.com/Mussina123/',
-      url: 'https://fine-ruby-deer-cap.cyclic.app/',
+      url: 'https://gotravel-tb.cyclic.app/',
       logo: REACTLOGO,
       logo2: Node,
       logo3: Tailwind,
