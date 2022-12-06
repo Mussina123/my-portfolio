@@ -90,7 +90,7 @@ export default function NavBar() {
             }
 
 
-            <Link className="bottom-[4%] right-0 fixed lg:bottom-[4%] lg:right-5 lg:fixed hover:scale-110"
+            <Link className="bottom-[4%] right-0 fixed lg:bottom-[4%] lg:right-5 lg:fixed hover:scale-110 "
                 to='about'
                 smooth
                 duration={500}>
