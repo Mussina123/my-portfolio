@@ -3,11 +3,11 @@ import HTML from '../logos/HTML-logo.png'
 import CSS from '../logos/CSS-logo.png'
 import JS from '../logos/JS-logo.png'
 import NODE from '../logos/NODE-logo.png'
-import EXPRESS from '../logos/EXPRESS-3-logo.png'
+import EXPRESS from '../logos/EXPRESS-logo.png'
 import REACTLOGO from '../logos/REACT-logo.png'
 import BOOTSTRAP from '../logos/BOOTSTRAP-logo.png'
 import TAILWIND from '../logos/TAILWIND-logo.png'
-import GITHUB from '../logos/GITHUB-logo.png'
+import GITHUB from '../logos/GITHUB-2.png'
 import MONGODB from '../logos/MONGODB-logo.png'
 
 export default function Experiences() {
@@ -61,7 +61,7 @@ export default function Experiences() {
         {
             id: 10,
             logo: CSS,
-            title: "Css"
+            title: "CSS"
         },
     ]
     return (
@@ -69,7 +69,7 @@ export default function Experiences() {
             name="skills"
             className="w-full h-100 pt-10 pl-10 md:pl-0 sm:pr-2 max-w-screen-lg pt-1 mx-auto flex flex-col justify-center w-full h-full">
             <div className="pb-8 mt-2">
-                <p className="text-4xl font-bold inline border-b-4 border-black">
+                <p className="text-4xl font-bold inline border-b-4 border-white">
                     Skills
                 </p>
             </div>

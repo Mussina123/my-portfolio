@@ -8,7 +8,7 @@ import Ecomm from '../images/Ecomm-2.png'
 import GoTravel from '../images/GoTravel.png'
 // import BOOK from '../images/BOOK.png'
 import { DiGithubBadge } from 'react-icons/di'
-import { GrPersonalComputer } from 'react-icons/gr'
+import { AiOutlineLaptop } from 'react-icons/ai'
 
 import Node from '../logos/NODE-logo.png'
 import HTML from '../logos/HTML-logo.png'
@@ -119,7 +119,7 @@ export default function Projects() {
     >
       <div className="sm:pr-2 max-w-screen-lg pt-1 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-black ml-10 md:ml-0">
+          <p className="text-4xl font-bold inline border-b-4 border-white ml-10 md:ml-0">
             Projects
           </p>
         </div>
@@ -132,9 +132,9 @@ export default function Projects() {
                 alt="projects"
                 className="rounded-lg duration-200 hover:scale-105 w-full h-72"
               />
-              <div className="flex justify-center items-center gap-6 pt-6 mb-4">
+              <div className="flex justify-center items-center gap-6 pt-6 mb-4 text-white">
                 <div className="flex items-center gap-1 text-xl font-medium hover:underline hover:font-bold cursor-pointer" onClick={() => window.open(repo, '_blank')}><DiGithubBadge size={30} /> Github</div>
-                <div className="flex items-center gap-1 text-xl font-medium hover:underline hover:font-bold cursor-pointer" onClick={() => window.open(url, '_blank')}><GrPersonalComputer size={30} /> Website </div>
+                <div className="flex items-center gap-1 text-xl font-medium hover:underline hover:font-bold cursor-pointer" onClick={() => window.open(url, '_blank')}><AiOutlineLaptop size={30} color="#ffffff" /> Website </div>
               </div>
               <div className="flex justify-center gap-6 mb-1 md:mb-0">
                 <img className="h-6" alt='skills' src={logo}></img>

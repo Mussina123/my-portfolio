@@ -4,6 +4,8 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif;
 }
 
 
@@ -15,5 +17,10 @@ body {
 }
 
 body {
-  background-color: beige;
+  background-color: rgba(18, 18, 18);
+  color: white 
+}
+
+svg {
+  color: white;
 }
