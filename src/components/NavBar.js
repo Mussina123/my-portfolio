@@ -88,12 +88,15 @@ export default function NavBar() {
                     </ul>
                 )
             }
+
+
             <Link className="bottom-[4%] right-0 fixed lg:bottom-[4%] lg:right-5 lg:fixed hover:scale-110"
                 to='about'
                 smooth
                 duration={500}>
-                <TbArrowUpCircle size={40} />
+                <TbArrowUpCircle size={40} className='text-transparent md:text-white' />
             </Link>
+
         </div >
 
     )
