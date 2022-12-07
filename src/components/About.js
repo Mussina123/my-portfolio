@@ -23,7 +23,7 @@ export default function About() {
         </p> */}
         <AnimatedAbout text='Tyler Beck' title='Front End Software Engineer' />
         <p className="mx-10 md:mx-0 md:max-w-screen-lg mt-4  h-full ">
-          I'm a Front End Engineer who is an established learner, analytical, organized, and a team player who has years of professional collaboration experience. I am looking to bring my skills to a tech company with global reach.
+          I'm an experienced React/Front End software engineer with a strong background in web development and a passion for building user-friendly, efficient, and scalable applications. Having years of experience with JavaScript, HTML, CSS, and other web development technologies.
         </p>
       </div>
 
