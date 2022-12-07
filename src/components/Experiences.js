@@ -41,7 +41,7 @@ export default function Experiences() {
         {
             id: 6,
             logo: HTML,
-            title: "Html"
+            title: "HTML"
         },
         {
             id: 7,
